@@ -178,7 +178,7 @@ section.page {margin-top:60px;padding:40px 0;}
 #navigation {float:right;font-size:0;position:relative;top:-25px;text-align:center;width:100%;}
 #navigation li {display:inline-block;font-size:14px;width:125px;}
 
-#navigation li a {display:block;position:relative;padding:21px 0;margin:0;color:#fff;text-transform:uppercase;font-size:0.9em;}
+#navigation li a {display:block;position:relative;padding:21px 0;margin:0;color:#fff;font-size:0.9em;}
 #navigation li span.arrow {position:relative;top:-1px;}
 #navigation li span.border {position:absolute;left:0;bottom:-5px;width:0;height:5px;background-color:#fff;}
 #navigation li a:hover span.border, #navigation li a.active span.border {width:100%;}

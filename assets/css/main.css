@@ -111,7 +111,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		color: #3fb1a3;
+		color: #ffffff;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
@@ -2310,8 +2310,7 @@ input, select, textarea {
 			letter-spacing: 0.075em;
 			position: absolute;
 			right: 1.5em;
-			text-transform: uppercase;
-			top: 0.75em;
+			top: 1.1em;
 		}
 
 			#header nav ul {
@@ -2333,7 +2332,7 @@ input, select, textarea {
 						border: solid 1px transparent;
 						color: inherit;
 						display: inline-block;
-						line-height: 1em;
+						line-height: 0.5em;
 						padding: 0.6em 0.75em;
 						text-decoration: none;
 					}
@@ -2505,14 +2504,14 @@ input, select, textarea {
 
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		/*background-color: #645862;*/
+		/*background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/576754.jpg");*/
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
 		color: #fff;
 		cursor: default;
-		padding: 6em 0;
+		padding: 11em 0;
 		text-align: center;
 	}
 
@@ -2531,6 +2530,7 @@ input, select, textarea {
 			opacity: 0;
 			padding: 3em;
 			text-align: center;
+			
 		}
 
 			#banner .inner header {
@@ -2604,7 +2604,7 @@ input, select, textarea {
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/576754.jpg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
