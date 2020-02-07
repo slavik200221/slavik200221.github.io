@@ -12,29 +12,28 @@
 				<link rel="stylesheet" type="greatrussianrp/css" href="assets/css/animate.css" />
 				<link rel="stylesheet" href="assets/css/fm.revealator.jquery.css">
 				<link rel="stylesheet" href="assets/css/style button.css">
+				<link rel="shortcut icon" href="images/fox.png" type="image/png">
 				<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-				<style>
+				<!--<style>
 					body {
-					 background: #c7b39b url(images/576754.jpg); /* Цвет фона и путь к файлу */
+					 background: #c7b39b url(images/576754.jpg), url(images/576754.jpg); /* Цвет фона и путь к файлу */
 					}
-				   </style>
+				   </style>-->
 				
 			</head>
 	<body class="index is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header" class="alt" style ="
-				height: 65.8666px;
-				bottom: 0px;
-				">
-					<h1 id="logo" style ="padding-top: 6px;"><a href="index.html">Parallel <span>Role Play Beta</span></a></h1>
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Parallel <span>Role Play Beta</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="raz.html">Новости</a></li>
-							<li class="current"><a href="https://grrp.sa-mp-servers.com/forum">Форум</a></li>
-							<li class="current"><a href="donate.html">Донат</a></li>
-							<li class="current"></li><a href="raz.html" ><button>Войти</button></a>
+							<li class="current"><a href="raz.html" class="icon fa-newspaper-o"> Новости</a></li>
+							<li class="current"><a href="https://grrp.sa-mp-servers.com/forum" class="icon fa-comments-o">  Форум</a></li>
+							<li class="current"><a href="donate.html" class="icon fa-money">  Донат</a></li>
+							<li class="current"></li><a href="raz.html" ><button class="icon fa-user-circle-o"> Войти</button></a>
+						</ul>
 					</nav>
 				</header>
 
@@ -85,17 +84,34 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script src="viewportchecker.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="assets/js/jquery-1.11.3.min.js"></script>
 		<script src="assets/js/fm.revealator.jquery.js"></script>
 		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?166"></script>
-
-<!-- VK Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript">
-VK.Widgets.CommunityMessages("vk_community_messages", 169096168, {tooltipButtonText: "Есть вопрос или жалоба?"});
-</script>
-</section>
+	<div id="vk_community_messages"></div>
+	<script type="text/javascript">
+	VK.Widgets.CommunityMessages("vk_community_messages", 169096168, {tooltipButtonText: "Есть вопрос или жалоба?"});
+	</script>
+	<script src="assets/js/jquery-1.11.3.min.js"></script> 
+	<script src="assets/js/jquery.backstretch.min.js"></script> 
+	<script> 
+	var images = [ 
+	"images/bg0.jpg", 
+	"images/bg1.jpg",
+	"images/bg2.jpg", 
+	"images/bg3.jpg",
+	"images/bg4.jpg"
+	]; 
+	$(images).each(function(){ 
+	$('<img/>')[0].src = this;  
+	});   
+	var index = 0; 
+	$.backstretch(images[index], {speed: 500}); 
+	setInterval(function() { 
+	index = (index >= images.length - 1) ? 0 : index + 1; 
+	$.backstretch(images[index]); 
+	}, 30000); 
+	</script>
+	</section>
 	</body>
 </html>

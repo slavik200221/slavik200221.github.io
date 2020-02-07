@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Фон</title>
+ </head>
+ <body>
+    <script src="assets/js/jquery-1.11.3.min.js"></script> 
+  <script src="assets/js/jquery.backstretch.min.js"></script> 
+  <script> 
+  // Создаем массив изображений. 
+  var images = [ 
+  "images/bg0.jpg", 
+  "images/bg1.jpg",
+  "images/bg2.jpg", 
+  "images/bg3.jpg"
+  ]; 
+   
+  // Небольшой скрипт для предварительной загрузки изображений. 
+  // В нем нет острой нужды, но идея хороша. 
+  $(images).each(function(){ 
+  $('<img/>')[0].src = this;  
+  }); 
+   
+  // Переменная index указывает на текущее используемое изображение. 
+  var index = 0; 
+   
+  // Вызываем Backstretch в первый раз. 
+  // В данном случае используется скорость в 500ms для эффекта проявления изображений. 
+  $.backstretch(images[index], {speed: 500}); 
+   
+  // Устанавливаем интервал, через который будет увеличиваться index и устанавливаться новое изображение. 
+  // Примечание: скорость проявления будет использоваться из первого вызова плагина. 
+  setInterval(function() { 
+  index = (index >= images.length - 1) ? 0 : index + 1; 
+  $.backstretch(images[index]); 
+  }, 30000); 
+  </script>
+ </body>
+</html>

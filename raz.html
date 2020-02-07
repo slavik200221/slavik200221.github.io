@@ -5,21 +5,32 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/style button.css">
+		<link rel="shortcut icon" href="images/fox.png" type="image/png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="left-sidebar is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="index.html">Parallel <span>Role Play Beta</span></a></h1>
-				</header>
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Parallel <span>Role Play Beta</span></a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="current"><a href="raz.html" class="icon fa-newspaper-o"> Новости</a></li>
+						<li class="current"><a href="https://grrp.sa-mp-servers.com/forum" class="icon fa-comments-o">  Форум</a></li>
+						<li class="current"><a href="donate.html" class="icon fa-money">  Донат</a></li>
+						<li class="current"></li><a href="raz.html" ><button class="icon fa-user-circle-o"> Войти</button></a>
+					</ul>
+				</nav>
+			</header>
+
 
 			<!-- Main -->
-				<article id="main">
+				<article id="header" style="margin-top: 200px; position: static;">
 
 					<header class="special container">
-						<span class="icon fa-laptop"></span>
+						<span class="icon fa-wrench"></span>
 						<h2>эта страница в <strong>Разработке</strong></h2>
 						<p>Скоро здесь будет нужная вам страница</p>
 						<a href="index.html">Главная Страница</a>
@@ -38,12 +49,29 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript" src="https://vk.com/js/api/openapi.js?166"></script>
-
-<!-- VK Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript">
-VK.Widgets.CommunityMessages("vk_community_messages", 169096168, {tooltipButtonText: "Есть вопрос или жалоба?"});
-</script>
-
+	<div id="vk_community_messages"></div>
+	<script type="text/javascript">
+	VK.Widgets.CommunityMessages("vk_community_messages", 169096168, {tooltipButtonText: "Есть вопрос или жалоба?"});
+	</script>
+	<script src="assets/js/jquery-1.11.3.min.js"></script> 
+	<script src="assets/js/jquery.backstretch.min.js"></script> 
+	<script> 
+	var images = [ 
+	"images/bg0.jpg", 
+	"images/bg1.jpg",
+	"images/bg2.jpg", 
+	"images/bg3.jpg",
+	"images/bg4.jpg"
+	]; 
+	$(images).each(function(){ 
+	$('<img/>')[0].src = this;  
+	});   
+	var index = 0; 
+	$.backstretch(images[index], {speed: 500}); 
+	setInterval(function() { 
+	index = (index >= images.length - 1) ? 0 : index + 1; 
+	$.backstretch(images[index]); 
+	}, 30000); 
+	</script>
 	</body>
 </html>
