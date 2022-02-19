@@ -31,8 +31,6 @@
 	</head>
 	<body class="left-sidebar is-preload">
 		<div id="page-wrapper">
-
-			<!-- Header -->
 			<header id="header">
 				<h1 id="logo"><a href="index.html">Parallel <span>Role Play Beta</span></a></h1>
 				<nav id="nav">
@@ -44,57 +42,55 @@
 					</ul>
 				</nav>
 			</header>
-
-
 			<!-- Main -->
-				<article id="header" style="margin-top: 200px; position: static;">
-
-					<header class="special container">
-						<span class="icon fa-wrench"></span>
-						<h2>эта страница в <strong>Разработке</strong></h2>
-						<p>Скоро здесь будет нужная вам страница</p>
-						<a href="index.html">Главная Страница</a>
-					</header>
-
+			<article id="header" style="margin-top: 200px; position: static;">
+				<header class="special container">
+					<span class="icon fa-wrench"></span>
+					<h2>эта страница в <strong>Разработке</strong></h2>
+					<p>Скоро здесь будет нужная вам страница</p>
+					<a href="index.html">Главная Страница</a>
+				</header>
+			</article>
 		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script type="text/javascript" src="https://vk.com/js/api/openapi.js?166"></script>
-	<div id="vk_community_messages"></div>
-	<script type="text/javascript">
-	VK.Widgets.CommunityMessages("vk_community_messages", 169096168, {tooltipButtonText: "Есть вопрос или жалоба?"});
-	</script>
-	<script src="assets/js/jquery-1.11.3.min.js"></script> 
-	<script src="assets/js/jquery.backstretch.min.js"></script> 
-	<script> 
-	var images = [ 
-	"images/bg0.jpg", 
-	"images/bg1.jpg",
-	"images/bg2.jpg", 
-	"images/bg3.jpg",
-	"images/bg4.jpg",
-	"images/bg5.jpg",
-	"images/bg6.jpg",
-	"images/bg7.jpg"
-	]; 
-	$(images).each(function(){ 
-	$('<img/>')[0].src = this;  
-	});   
-	var index = 0; 
-	$.backstretch(images[index], {speed: 500}); 
-	setInterval(function() { 
-	index = (index >= images.length - 1) ? 0 : index + 1; 
-	$.backstretch(images[index]); 
-	}, 60000); 
-	</script>
+		<div class="copyright copyrights">
+			<li class="copyright">&copy; Parallel RP 2019-2022</li>
+		</div>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollgress.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?166"></script>
+		<!--VK-->
+		<div id="vk_community_messages"></div>
+		<script type="text/javascript">
+			VK.Widgets.CommunityMessages("vk_community_messages", 169096168, {tooltipButtonText: "Есть вопрос или жалоба?"});
+		</script>
+		<!--VK-->
+		<script src="assets/js/jquery-1.11.3.min.js"></script> 
+		<script src="assets/js/jquery.backstretch.min.js"></script> 
+		<script> 
+			var images = [ 
+				"images/bg0.jpg", 
+				"images/bg1.jpg",
+				"images/bg2.jpg", 
+				"images/bg3.jpg",
+				"images/bg4.jpg",
+				"images/bg5.jpg",
+				"images/bg6.jpg",
+				"images/bg7.jpg"]; 
+			$(images).each(function(){ 
+				$('<img/>')[0].src = this;  });   
+			var index = 0; 
+			$.backstretch(images[index], {speed: 500}); 
+			setInterval(function() { 
+				index = (index >= images.length - 1) ? 0 : index + 1; 
+				$.backstretch(images[index]); 
+			}, 60000); 
+		</script>
 	</body>
 </html>

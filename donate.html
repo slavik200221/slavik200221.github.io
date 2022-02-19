@@ -31,33 +31,28 @@
 	</head>
 	<body class="left-sidebar is-preload">
 		<div id="page-wrapper">
-
-			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="index.html">Parallel <span>Role Play Beta</span></a></h1>
-					<nav id="nav">
-						<ul>
-							<li class="current"><a href="raz.html" class="icon fa-newspaper-o"> Новости</a></li>
-							<li class="current"><a href="https://grrp.sa-mp-servers.com/forum" class="icon fa-comments-o">  Форум</a></li>
-							<li class="current"><a href="donate.html" class="icon fa-money">  Донат</a></li>
-							<li class="current"></li><a href="raz.html" ><button class="icon fa-user-circle-o"> Войти</button></a>
-						</ul>
-					</nav>
-				</header>
-
-			<!-- Main -->
-				<article id="header" style="margin-top: 200px; position: static;">
-
-					<header class="special container" >
-						<span class="icon fa-money"></span>
-						<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-						<form action="https://gamesdonate.com/pay/e759667fdf05ad3ac1" method="POST"> 
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Parallel <span>Role Play Beta</span></a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="current"><a href="raz.html" class="icon fa-newspaper-o"> Новости</a></li>
+						<li class="current"><a href="https://grrp.sa-mp-servers.com/forum" class="icon fa-comments-o">  Форум</a></li>
+						<li class="current"><a href="donate.html" class="icon fa-money">  Донат</a></li>
+						<li class="current"></li><a href="raz.html" ><button class="icon fa-user-circle-o"> Войти</button></a>
+					</ul>
+				</nav>
+			</header>
+			<article id="header" style="margin-top: 200px; position: static;">
+				<header class="special container" >
+					<span class="icon fa-money"></span>
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+					<form action="https://gamesdonate.com/pay/e759667fdf05ad3ac1" method="POST"> 
 						<link rel="stylesheet" href="https://gamesdonate.com/assets/widget-css.css"/>
 						<h4 class="donate_title" style="color: #fff">Пополнить донат счёт</h4>
 						<div class="donate_fgc">
 							<center>
-							<input type="text" style= "background-color: #ffffff; color: #000000" class="donate_fc text-center" id="account" name="account" placeholder="Никнейм">
-						</center>
+								<input type="text" style= "background-color: #ffffff; color: #000000" class="donate_fc text-center" id="account" name="account" placeholder="Никнейм">
+							</center>
 						</div>
 						<div class="donate_fgc" id="donate_pex_block">
 							<select class="donate_fc" id="good" name="good"></select>
@@ -66,53 +61,50 @@
 							<button type="submit" class="donate_btn" style="background-color: #3da35a; color:#fff; border: 0px"">Продолжить</button>
 						</div>
 						<script src="https://gamesdonate.com/assets/widget-php.php?token=e759667fdf05ad3ac1"></script>
-						</form>
-					</header>
-
+					</form>
+				</header>
+			</article>
 		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script type="text/javascript" src="https://vk.com/js/api/openapi.js?166"></script>
-			<script type="text/javascript" src="https://vk.com/js/api/openapi.js?166"></script>
-		<div id="vk_community_messages"></div>
-		<script type="text/javascript">
-		VK.Widgets.CommunityMessages("vk_community_messages", 169096168, {tooltipButtonText: "Есть вопрос или жалоба?"});
-		</script>
+		<div class="copyright copyrights">
+			<li class="copyright">&copy; Parallel RP 2019-2022</li>
+		</div>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollgress.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?166"></script>
+		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?166"></script>
 		<script src="assets/js/jquery-1.11.3.min.js"></script> 
 		<script src="assets/js/jquery.backstretch.min.js"></script> 
 		<script> 
-		var images = [ 
-		"images/bg0.jpg", 
-		"images/bg1.jpg",
-		"images/bg2.jpg", 
-		"images/bg3.jpg",
-		"images/bg4.jpg",
-		"images/bg5.jpg",
-		"images/bg6.jpg",
-		"images/bg7.jpg"
-		]; 
-		$(images).each(function(){ 
-		$('<img/>')[0].src = this;  
-		});   
-		var index = 0; 
-		$.backstretch(images[index], {speed: 500}); 
-		setInterval(function() { 
-		index = (index >= images.length - 1) ? 0 : index + 1; 
-		$.backstretch(images[index]); 
-		}, 60000); 
+			var images = [ 
+				"images/bg0.jpg", 
+				"images/bg1.jpg",
+				"images/bg2.jpg", 
+				"images/bg3.jpg",
+				"images/bg4.jpg",
+				"images/bg5.jpg",
+				"images/bg6.jpg",
+				"images/bg7.jpg"]; 
+			$(images).each(function(){ 
+				$('<img/>')[0].src = this;  });   
+			var index = 0; 
+			$.backstretch(images[index], {speed: 500}); 
+			setInterval(function() { 
+				index = (index >= images.length - 1) ? 0 : index + 1; 
+				$.backstretch(images[index]); 
+			}, 60000); 
 		</script>
-	<div id="vk_community_messages"></div>
-	<script type="text/javascript">
-	VK.Widgets.CommunityMessages("vk_community_messages", 169096168, {tooltipButtonText: "Есть вопрос или жалоба?"});
-	</script>
+		<!--VK-->
+		<div id="vk_community_messages"></div>
+		<script type="text/javascript">
+			VK.Widgets.CommunityMessages("vk_community_messages", 169096168, {tooltipButtonText: "Есть вопрос или жалоба?"});
+		</script>
+		<!--VK-->
 	</body>
 </html>

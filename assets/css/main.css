@@ -24,7 +24,6 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
-
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -53,6 +52,10 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+}
+
+::-webkit-scrollbar {
+	width: 0;
 }
 
 mark {
@@ -2290,7 +2293,7 @@ input, select, textarea {
 		cursor: default;
 		font-size: 0.8em;
 		left: 0;
-		padding: 1.3em 1.5em;
+		padding: 1.3em 2.5em;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -2617,6 +2620,34 @@ input, select, textarea {
 			margin-bottom: 2em;
 		}
 
+/* copyright */
+
+	.copyright {
+		color: #fff;
+		font-size: 13px;
+		left: 45%;
+		z-index: 40;
+		bottom: -1px;
+	}
+	.copyrights {
+		position: absolute;
+	  }
+	.copyright a {
+		color: inherit;
+		border-bottom: dotted 0px;
+	}
+	.copyright li {			
+		display: inline-block;
+		margin-left: 1em;
+		padding-left: 1em;
+		/*border-left: dotted 1px;*/
+	}
+
+	.copyright li:first-child {
+		padding: 0;			
+		border: 0;
+	}
+
 /* Footer */
 
 	#footer {
@@ -2626,9 +2657,11 @@ input, select, textarea {
 		text-align: center;
 	}
 
-		#footer .copyright {
+		/*#footer .copyright {
+			color: #fff;
 			font-size: 0.8em;
 			line-height: 1em;
+			text-align:center;
 		}
 
 			#footer .copyright a {
@@ -2646,7 +2679,7 @@ input, select, textarea {
 					margin: 0;
 					padding: 0;
 					border: 0;
-				}
+				}*/
 
 /* Wide */
 
