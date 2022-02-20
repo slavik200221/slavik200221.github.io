@@ -2285,7 +2285,7 @@ input, select, textarea {
 			top: 0;
 		}
 	}
-
+	
 	#header {
 		background: #00000080;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
@@ -2507,7 +2507,6 @@ input, select, textarea {
 
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
-		/*background-color: #645862;*/
 		/*background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/576754.jpg");*/
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
@@ -2570,6 +2569,22 @@ input, select, textarea {
 
 			#banner .inner footer {
 				margin: 2em 0 0 0;
+			}
+			#banner .inner ul li a{
+				border: solid 1px transparent;
+				color: inherit;
+				display: inline-block;
+				line-height: 0.5em;
+				padding: 0.6em 0.75em;
+				text-decoration: none;
+			}
+			
+			#banner .inner ul li.active > a, ul li:hover > a {
+					-moz-transition: all 0.2s ease-in-out;
+					-webkit-transition: all 0.2s ease-in-out;
+					-ms-transition: all 0.2s ease-in-out;
+					transition: all 0.2s ease-in-out;
+					background: rgba(188, 202, 206, 0.15);
 			}
 
 /* Main */
@@ -3277,9 +3292,9 @@ input, select, textarea {
 			}
 
 				#banner .inner {
-					background: none;
+					/*background: none;*/
 					display: block;
-					padding: 0 1.5em;
+					/*padding: 0 1.5em;*/
 				}
 
 					#banner .inner header h2 {
@@ -3293,6 +3308,12 @@ input, select, textarea {
 					#banner .inner br {
 						display: none;
 					}
+		
+		/*Copyright*/
+
+		.copyright{
+			left:30%;
+		}
 
 		/* Main */
 
